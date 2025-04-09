@@ -310,89 +310,74 @@ eleventyNavigation:
     </section>
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!--                Side By Side                  -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <section id="sbs-1006">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Desktop-->
                     <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/cabinets2-m.jpg"
+                        media="(min-width: 1024px)"
+                        srcset="/assets/images/profile.jpg"
                     />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/cabinets2.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/cabinets2.jpg"
-                        alt="cabinets"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/construction-m.jpg"
-                    />
+                    <!--Tablet-->
                     <source
                         media="(min-width: 601px)"
-                        srcset="/assets/images/construction.jpg"
+                        srcset="/assets/images/profile.jpg"
+                    />
+                    <!--Mobile-->
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="/assets/images/profile.jpg"
                     />
                     <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/construction.jpg"
-                        alt="house"
                         loading="lazy"
-                        width="400"
-                        height="563"
+                        decoding="async"
+                        src="/assets/images/profile.jpg"
+                        alt="beef"
+                        width="522"
+                        height="461"
+                        aria-hidden="true"
                     />
                 </picture>
+                <img
+                    class="cs-seal"
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/images/logo.jpg"
+                    alt="seal"
+                    width="190"
+                    height="182"
+                />
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+            <div class="cs-content">
+                <span class="cs-topper">Our Story</span>
+                <h2 class="cs-title">Built by an RVer, for RVers</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
+                    I’m not just another RV tech—I’m an RVer, just like you.
+                    Since 2018, I’ve been living full-time in a 5th wheel and a
+                    truck camper, so I understand firsthand how frustrating it
+                    is when something stops working and you're far from a
+                    dealership or stuck waiting for a callback that never comes.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
+                    That’s why I started AAA RV Tech—to offer a better way. I’m
+                    an Advanced Certified RV Technician who brings the repair
+                    shop to you, whether you’re parked in a driveway, a
+                    campground, or somewhere off-grid near Portland, Oregon. No
+                    towing, no long waits, just real help when you need it.
                 </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet.
-                        Praesent Classei consequat tincidunt turpis sit amet
-                        imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img
-                        class="cs-quote-icon"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                        alt="gavel"
-                        width="136"
-                        height="77"
-                    />
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
+                <p class="cs-text">
+                    From fixing fridges and furnaces to solving tank issues,
+                    leaky roofs, and more, I handle the stuff that keeps your RV
+                    running—and your trip on track. I care about doing the job
+                    right, treating your rig with respect, and getting you back
+                    to enjoying the RV life as fast as possible.
+                </p>
+
+                <a href="/contact" class="cs-button-solid">Schedule Service</a>
             </div>
         </div>
     </section>
