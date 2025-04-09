@@ -225,38 +225,41 @@
             padding-top: 0;
             background-color: #f4f4f4;
             border-radius: calc(24 / 16 * 1rem);
+            border: 2px solid var(--gray);
             display: flex;
             flex-direction: column;
             align-items: center;
             grid-column: span 12;
             position: relative;
             z-index: 1;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
 
             &:hover {
-                background-color: var(--primary);
+                // background-color: var(--secondary);
+                transform: translateY(-4px);
+                box-shadow: var(--shadow);
 
-                .cs-picture {
-                    background-color: var(--primary);
-                }
+                // .cs-picture {
+                // background-color: var(--primary);
+                // }
 
-                .cs-icon,
-                .cs-arrow {
-                    filter: grayscale(1) brightness(1000%);
-                }
+                // .cs-icon,
+                // .cs-arrow {
+                // filter: grayscale(1) brightness(1000%);
+                // }
 
-                .cs-h3,
-                .cs-item-text {
-                    color: #fff;
-                }
+                // .cs-h3,
+                // .cs-item-text {
+                // color: #fff;
+                // }
 
-                .cs-item-text {
-                    opacity: 0.8;
-                }
+                // .cs-item-text {
+                //     opacity: 0.8;
+                // }
 
-                .cs-link {
-                    border-color: #fff;
-                }
+                // .cs-link {
+                //     border-color: #fff;
+                // }
             }
         }
 
@@ -265,8 +268,8 @@
             height: calc(88 / 16 * 1rem);
             margin: calc(-44 / 16 * 1rem) 0 clamp(1.75rem, 3vw, 2.25rem) 0;
             box-sizing: border-box;
-            background-color: #bababa;
-            border: 2px solid #fff;
+            background-color: var(--white);
+            border: 2px solid var(--gray);
             border-radius: 50%;
             display: flex;
             justify-content: center;

@@ -188,41 +188,26 @@
     padding-top: 0;
     background-color: #f4f4f4;
     border-radius: 1.5rem;
+    border: 2px solid var(--gray);
     display: flex;
     flex-direction: column;
     align-items: center;
     grid-column: span 12;
     position: relative;
     z-index: 1;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
   }
   #services-1378 .cs-item:hover {
-    background-color: var(--primary);
-  }
-  #services-1378 .cs-item:hover .cs-picture {
-    background-color: var(--primary);
-  }
-  #services-1378 .cs-item:hover .cs-icon,
-  #services-1378 .cs-item:hover .cs-arrow {
-    filter: grayscale(1) brightness(1000%);
-  }
-  #services-1378 .cs-item:hover .cs-h3,
-  #services-1378 .cs-item:hover .cs-item-text {
-    color: #fff;
-  }
-  #services-1378 .cs-item:hover .cs-item-text {
-    opacity: 0.8;
-  }
-  #services-1378 .cs-item:hover .cs-link {
-    border-color: #fff;
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
   }
   #services-1378 .cs-picture {
     width: 5.5rem;
     height: 5.5rem;
     margin: -2.75rem 0 clamp(1.75rem, 3vw, 2.25rem) 0;
     box-sizing: border-box;
-    background-color: #bababa;
-    border: 2px solid #fff;
+    background-color: var(--white);
+    border: 2px solid var(--gray);
     border-radius: 50%;
     display: flex;
     justify-content: center;
