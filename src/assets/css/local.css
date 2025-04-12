@@ -5,6 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #sbs-1006 {
+    background-color: var(--light);
     padding: var(--sectionPadding);
   }
   #sbs-1006 .cs-container {
@@ -51,6 +52,8 @@
     display: block;
     box-shadow: var(--shadow);
     position: relative;
+    border-radius: var(--borderRoundedLg);
+    overflow: hidden;
   }
   #sbs-1006 .cs-picture img {
     position: absolute;
@@ -58,7 +61,6 @@
     left: 0;
     height: 100%;
     width: 100%;
-    border-radius: var(--borderRounded);
     /* makes it behave like a background image */
     object-fit: cover;
   }
