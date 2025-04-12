@@ -155,6 +155,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #sbsr-1566 {
+    background-color: var(--lighter);
     padding: var(--sectionPadding);
     position: relative;
     z-index: 2;
@@ -429,6 +430,7 @@
 @media only screen and (min-width: 0rem) {
   #reviews-62 {
     padding: var(--sectionPadding);
+    background-color: var(--lighter);
   }
   #reviews-62 .cs-container {
     width: 100%;
