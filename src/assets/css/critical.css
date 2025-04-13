@@ -274,7 +274,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #services-1378 {
-    background-color: var(--darker);
+    background-color: var(--medium);
   }
   body.dark-mode #services-1378 .cs-item {
     background-color: var(--accent);

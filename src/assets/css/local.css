@@ -133,6 +133,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-1006 {
+    background-color: var(--dark);
+  }
   body.dark-mode #sbs-1006 .cs-title,
   body.dark-mode #sbs-1006 .cs-text {
     color: var(--bodyTextColorWhite);
@@ -316,6 +319,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #sbsr-1566 {
+    background-color: var(--medium);
+  }
   body.dark-mode #sbsr-1566 .cs-title,
   body.dark-mode #sbsr-1566 .cs-text,
   body.dark-mode #sbsr-1566 .cs-li,
@@ -417,7 +423,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 48rem) {
   body.dark-mode #logos-1566 {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--dark);
   }
   body.dark-mode #logos-1566 .cs-background img {
     opacity: 0.35;
@@ -517,6 +523,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #reviews-62 {
+    background-color: var(--medium);
+  }
   body.dark-mode #reviews-62 .cs-topper {
     color: var(--primaryLight);
   }

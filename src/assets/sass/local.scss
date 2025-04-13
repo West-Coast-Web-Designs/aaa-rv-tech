@@ -158,6 +158,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-1006 {
+            background-color: var(--dark);
             .cs-title,
             .cs-text {
                 color: var(--bodyTextColorWhite);
@@ -369,6 +370,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbsr-1566 {
+            background-color: var(--medium);
             .cs-title,
             .cs-text,
             .cs-li,
@@ -487,7 +489,7 @@
 @media only screen and (min-width: 48rem) {
     body.dark-mode {
         #logos-1566 {
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: var(--dark);
 
             .cs-background {
                 img {
@@ -608,6 +610,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #reviews-62 {
+            background-color: var(--medium);
             .cs-topper {
                 color: var(--primaryLight);
             }
