@@ -526,9 +526,6 @@
   body.dark-mode #reviews-62 {
     background-color: var(--medium);
   }
-  body.dark-mode #reviews-62 .cs-topper {
-    color: var(--primaryLight);
-  }
   body.dark-mode #reviews-62 .cs-title,
   body.dark-mode #reviews-62 .cs-text,
   body.dark-mode #reviews-62 .cs-name,

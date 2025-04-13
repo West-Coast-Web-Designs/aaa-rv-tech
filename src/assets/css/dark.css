@@ -5,8 +5,8 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   :root {
-    --accent: #173753;
-    --accentLight: #1f496f;
+    --accent: #2d354e;
+    --accentLight: #434f75;
     --medium: #1e2434;
     --dark: #0f121a;
   }

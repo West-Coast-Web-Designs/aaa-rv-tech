@@ -1371,7 +1371,7 @@
     transition: color 0.3s;
   }
   #cs-footer-840 .cs-link:hover {
-    color: var(--primaryLight);
+    color: var(--secondary);
   }
   #cs-footer-840 .cs-icon {
     width: 1.25rem;
