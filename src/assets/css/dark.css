@@ -29,6 +29,13 @@
   body.dark-mode .dark {
     display: block !important;
   }
+  body.dark-mode .cs-button-solid {
+    background-color: var(--tertiary);
+    color: #fff;
+  }
+  body.dark-mode .cs-button-solid:hover {
+    background-color: var(--tertiaryDark);
+  }
   .dark {
     display: none;
   }

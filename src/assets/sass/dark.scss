@@ -42,6 +42,15 @@
         .dark {
             display: block !important;
         }
+
+        .cs-button-solid {
+            background-color: var(--tertiary);
+            color: #fff;
+
+            &:hover {
+                background-color: var(--tertiaryDark);
+            }
+        }
     }
 
     .dark {
