@@ -217,7 +217,7 @@
             list-style: none;
             width: 100%;
             /* 210px - 305px */
-            min-height: clamp(13.125rem, 30vw, 19.0625rem);
+
             margin: 0;
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
@@ -301,7 +301,6 @@
             font-size: calc(16 / 16 * 1rem);
             line-height: 1.5em;
             text-align: inherit;
-            margin: 0 0 calc(32 / 16 * 1rem);
             color: var(--bodyTextColor);
             transition: 0.3s color;
         }
@@ -352,25 +351,10 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #services-1378 {
+            background-color: var(--darker);
             .cs-item {
-                background-color: var(--medium);
-
-                &:hover {
-                    background-color: var(--accent);
-
-                    .cs-icon,
-                    .cs-arrow {
-                        filter: grayscale(1) brightness(1000%);
-                    }
-
-                    .cs-h3 {
-                        color: #fff;
-                    }
-
-                    .cs-arrow-wrapper {
-                        border-color: #fff;
-                    }
-                }
+                background-color: var(--accent);
+                border: 2px solid var(--accentLight);
             }
 
             .cs-title,
@@ -387,10 +371,7 @@
 
             .cs-picture {
                 background-color: var(--accent);
-            }
-
-            .cs-icon {
-                filter: grayscale(1) brightness(1000%);
+                border: 2px solid var(--accentLight);
             }
         }
     }

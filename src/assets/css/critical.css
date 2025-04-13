@@ -180,7 +180,6 @@
     list-style: none;
     width: 100%;
     /* 210px - 305px */
-    min-height: clamp(13.125rem, 30vw, 19.0625rem);
     margin: 0;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
@@ -236,7 +235,6 @@
     font-size: 1rem;
     line-height: 1.5em;
     text-align: inherit;
-    margin: 0 0 2rem;
     color: var(--bodyTextColor);
     transition: 0.3s color;
   }
@@ -275,21 +273,12 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #services-1378 {
+    background-color: var(--darker);
+  }
   body.dark-mode #services-1378 .cs-item {
-    background-color: var(--medium);
-  }
-  body.dark-mode #services-1378 .cs-item:hover {
     background-color: var(--accent);
-  }
-  body.dark-mode #services-1378 .cs-item:hover .cs-icon,
-  body.dark-mode #services-1378 .cs-item:hover .cs-arrow {
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #services-1378 .cs-item:hover .cs-h3 {
-    color: #fff;
-  }
-  body.dark-mode #services-1378 .cs-item:hover .cs-arrow-wrapper {
-    border-color: #fff;
+    border: 2px solid var(--accentLight);
   }
   body.dark-mode #services-1378 .cs-title,
   body.dark-mode #services-1378 .cs-text,
@@ -303,9 +292,7 @@
   }
   body.dark-mode #services-1378 .cs-picture {
     background-color: var(--accent);
-  }
-  body.dark-mode #services-1378 .cs-icon {
-    filter: grayscale(1) brightness(1000%);
+    border: 2px solid var(--accentLight);
   }
 }
 
