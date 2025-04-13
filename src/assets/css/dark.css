@@ -29,6 +29,9 @@
   body.dark-mode .dark {
     display: block !important;
   }
+  body.dark-mode .cs-topper {
+    color: var(--tertiaryLight);
+  }
   body.dark-mode .cs-button-solid {
     background-color: var(--tertiary);
     color: #fff;
