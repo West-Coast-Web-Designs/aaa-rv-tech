@@ -1,131 +1,137 @@
 ---
-title: "About | Code Stitch Web Designs"
-description: "Meta description for the page"
-preloadImg: "/assets/images/cabinets2.jpg"
+title: "Jim's RV Inspection Services | Exterior Services | Certified RV Inspector in Portland, OR"
+description: "Jim's RV Inspection Services offers free exterior inspections and professional repair assessments in Portland, Oregon. Identify and address exterior damage with expert guidance."
 permalink: "about/"
+page:
+    title: About Us
 eleventyNavigation:
-    key: About Us
-    order: 200
+    key: About/
+    order: 500
 ---
 
 {% extends "layouts/base.html" %}
-
 {% block head %}
     <link rel="stylesheet" href="/assets/css/about.css" />
+    {# <link
+        rel="preloadImg"
+        href="{% getUrl '/assets/images/exterior-services.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+        as="image"
+    />
+    <link
+        rel="preloadImg"
+        href="{% getUrl '/assets/images/exterior-services.jpg' | resize({ width: 712, height: 898 }) | jpeg %}"
+        as="image"
+    /> #}
 {% endblock %}
-
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
-
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/cabinets2-m.jpg"
-            />
-            <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/cabinets2.jpg"
-            />
-            <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/images/cabinets2.jpg"
-                alt="kitchen cabinets"
-                loading="eager"
-                width="2500"
-                height="1667"
-            />
-        </picture>
-    </section>
+    {% include 'components/banner.html' %}
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!--                 Content Page                 -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+    <!-- ============================================ -->
+    <!--                Side By Side                  -->
+    <!-- ============================================ -->
+
+    <section id="sbs-2291">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/cabinets2-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/cabinets2.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/cabinets2.jpg"
-                        alt="cabinets"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/construction-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/construction.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/construction.jpg"
-                        alt="house"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+            <!-- Left Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">About AAA RV Tech</span>
+                <h2 class="cs-title">
+                    Built by an RVer. Run by an RVer. For RVers.
+                </h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
+                    Hey, I’m the face behind AAA RV Tech—and I’ve been living
+                    the RV life full-time since 2018. That means I know exactly
+                    what it’s like when something breaks in your rig. Whether
+                    it’s your fridge going warm, your roof springing a leak, or
+                    your tanks causing trouble, I’ve been there. I’ve dealt with
+                    it. And now, I help others get through it—quickly and
+                    stress-free.
+                </p>
+                <h2 class="cs-heading">Why I started AAA RV Tech</h2>
+                <p class="cs-text">
+                    After years on the road and more than a few frustrating
+                    service experiences, I decided to do something about it. I
+                    trained, got certified, and built this business to offer
+                    what I wished existed: mobile, honest, professional RV
+                    repair that actually comes to you.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
+                    As an Advanced Certified RV Technician, I’m trained to
+                    handle everything from appliance repairs to plumbing, solar
+                    installs, roof work, and more. But beyond the skills and
+                    certifications, I bring something else to every job—real
+                    empathy. I treat every RV like it’s my own, because I know
+                    how important it is to keep your home on wheels safe,
+                    functional, and road-ready.
                 </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet.
-                        Praesent Classei consequat tincidunt turpis sit amet
-                        imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img
-                        class="cs-quote-icon"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                        alt="gavel"
-                        width="136"
-                        height="77"
-                    />
+
+                <div class="cs-features">
+                    <h3 class="cs-h3">What you can expect</h3>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <b>I show up when I say I will.</b><br />
+                            No endless waiting, no dealership runaround. Just
+                            real service, on your schedule.
+                        </li>
+                        <li class="cs-li">
+                            <b>I fix it right, the first time.</b><br />
+                            Whether it's a quick tune-up or a bigger repair, I
+                            take pride in quality work and clear communication.
+                        </li>
+                        <li class="cs-li">
+                            <b> No upsells, no fluff.</b><br />
+                            I won’t talk you into things you don’t need. I’ll
+                            tell you what’s wrong, what it’ll take to fix it,
+                            and get to work.
+                        </li>
+                    </ul>
                 </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
+            </div>
+            <!-- Right Image Section -->
+            <div class="cs-image-group">
+                <!--Floating Box-->
+                <div class="cs-box">
+                    <span class="cs-number">100+</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-heading">RV Repairs Completed</h3>
+                        <span class="cs-desc"
+                            >Repairing RVs for over 5 years</span
+                        >
+                    </div>
+                </div>
+                <!--Image-->
+                <picture class="cs-picture">
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="/assets/images/profile.jpg"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="/assets/images/profile.jpg"
+                    />
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="/assets/images/profile.jpg"
+                        alt="meeting"
+                        width="630"
+                        height="630"
+                        aria-hidden="true"
+                    />
+                </picture>
             </div>
         </div>
     </section>
