@@ -316,6 +316,8 @@
             max-height: calc(600 / 16 * 1rem);
             display: block;
             position: relative;
+            border-radius: var(--borderRounded);
+            overflow: hidden;
             z-index: 1;
 
             img {
@@ -360,8 +362,6 @@
             margin-bottom: calc(clamp(5rem, 7vw, 7rem) * -1);
             /* sends it to the right in the 2nd position */
             order: 2;
-            border-radius: var(--borderRoundedLg);
-            overflow: hidden;
         }
     }
 }

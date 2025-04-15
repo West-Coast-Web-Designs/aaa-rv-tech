@@ -98,18 +98,53 @@ eleventyNavigation:
         <picture class="cs-background">
             <source
                 media="(max-width: 600px)"
-                srcset="/assets/images/hero.png"
+                srcset="
+                    {% getUrl '/assets/images/hero.png' | resize({ width: 1200, height: 1500, position: 'attention' }) | avif %}
+                "
+                type="image/avif"
+            />
+            <source
+                media="(max-width: 600px)"
+                srcset="
+                    {% getUrl '/assets/images/hero.png' | resize({ width: 1200, height: 1500, position: 'attention' }) | webp %}
+                "
+                type="image/webp"
+            />
+            <source
+                media="(max-width: 600px)"
+                srcset="
+                    {% getUrl '/assets/images/hero.png' | resize({ width: 1200, height: 1500, position: 'attention' }) | jpeg %}
+                "
+                type="image/jpeg"
+            />
+            <!--Tablet Image-->
+            <source
+                media="(min-width: 601px)"
+                srcset="
+                    {% getUrl '/assets/images/hero.png' | resize({ width: 2250, height: 1500, position: 'attention' }) | avif %}
+                "
+                type="image/avif"
             />
             <source
                 media="(min-width: 601px)"
-                srcset="/assets/images/hero.png"
+                srcset="
+                    {% getUrl '/assets/images/hero.png' | resize({ width: 2250, height: 1500, position: 'attention' }) | webp %}
+                "
+                type="image/webp"
+            />
+            <source
+                media="(min-width: 601px)"
+                srcset="
+                    {% getUrl '/assets/images/hero.png' | resize({ width: 2250, height: 1500, position: 'attention' }) | jpeg %}
+                "
+                type="image/jpeg"
             />
             <img
-                decoding="async"
-                src="/assets/images/hero.png"
-                alt="restaurant"
+                src="{% getUrl '/assets/images/hero.png' | resize({ width: 2250, height: 1500, position: 'attention' }) | jpeg %}"
+                alt="traveling rv"
                 width="2250"
                 height="1500"
+                decoding="async"
                 aria-hidden="true"
             />
         </picture>
@@ -253,28 +288,77 @@ eleventyNavigation:
         <div class="cs-container">
             <div class="cs-image-group">
                 <picture class="cs-picture">
-                    <!--Desktop-->
-                    <source
-                        media="(min-width: 1024px)"
-                        srcset="/assets/images/profile.jpg"
-                    />
-                    <!--Tablet-->
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/profile.jpg"
-                    />
-                    <!--Mobile-->
                     <source
                         media="(max-width: 600px)"
-                        srcset="/assets/images/profile.jpg"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1136, height: 522, position: 'attention' }) | avif %}
+                        "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1136, height: 522, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1136, height: 522, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
+                    />
+                    <!--Tablet Image-->
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1600, height: 522, position: 'attention' }) | avif %}
+                        "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1600, height: 522, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1600, height: 522, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
+                    />
+                    <!--Desktop Image-->
+                    <source
+                        media="(min-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1084, height: 920, position: 'attention' }) | avif %}
+                        "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1084, height: 920, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1084, height: 920, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
-                        loading="lazy"
+                        src="{% getUrl '/assets/images/profile.jpg' | resize({ width: 522, height: 461, position: 'attention' }) | jpeg %}"
+                        alt="traveling rv"
+                        width="2250"
+                        height="1500"
                         decoding="async"
-                        src="/assets/images/profile.jpg"
-                        alt="beef"
-                        width="522"
-                        height="461"
                         aria-hidden="true"
                     />
                 </picture>
@@ -327,19 +411,53 @@ eleventyNavigation:
             <picture class="cs-picture">
                 <source
                     media="(max-width: 600px)"
-                    srcset="/assets/images/why-choose-us.png"
+                    srcset="
+                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1100, height: 1200, position: 'attention' }) | avif %}
+                    "
+                    type="image/avif"
+                />
+                <source
+                    media="(max-width: 600px)"
+                    srcset="
+                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1100, height: 1200, position: 'attention' }) | webp %}
+                    "
+                    type="image/webp"
+                />
+                <source
+                    media="(max-width: 600px)"
+                    srcset="
+                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1100, height: 1200, position: 'attention' }) | jpeg %}
+                    "
+                    type="image/jpeg"
+                />
+                <!--Tablet Image-->
+                <source
+                    media="(min-width: 601px)"
+                    srcset="
+                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1172, height: 1500, position: 'attention' }) | avif %}
+                    "
+                    type="image/avif"
                 />
                 <source
                     media="(min-width: 601px)"
-                    srcset="/assets/images/why-choose-us.png"
+                    srcset="
+                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1172, height: 1500, position: 'attention' }) | webp %}
+                    "
+                    type="image/webp"
+                />
+                <source
+                    media="(min-width: 601px)"
+                    srcset="
+                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1172, height: 1500, position: 'attention' }) | jpeg %}
+                    "
+                    type="image/jpeg"
                 />
                 <img
-                    loading="lazy"
+                    src="{% getUrl '/assets/images/why-choose-us.png' | resize({ width: 586, height: 752, position: 'attention' }) | jpeg %}"
+                    alt="traveling rv"
+                    width="2250"
+                    height="1500"
                     decoding="async"
-                    src="/assets/images/why-choose-us.png"
-                    alt="model"
-                    width="586"
-                    height="752"
                     aria-hidden="true"
                 />
             </picture>
