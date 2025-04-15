@@ -82,6 +82,13 @@
             position: relative;
         }
 
+        .cs-divider {
+            width: 100%;
+            height: 1px;
+            background-color: var(--bodyTextColor);
+            margin: calc(32 / 16 * 1rem) 0;
+        }
+
         h2,
         h3,
         h4,
@@ -365,6 +372,10 @@
 
             .cs-subtitle {
                 color: var(--bodyTextColorWhite);
+            }
+
+            .cs-divider {
+                background-color: var(--bodyTextColorWhite);
             }
         }
     }

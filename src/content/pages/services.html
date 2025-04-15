@@ -1,0 +1,173 @@
+---
+title: "Jim's RV Inspection Services | Inspections | Certified RV Inspector in Portland, OR"
+description: "Explore professional RV inspection services from Jim's RV Inspection Services in Portland, Oregon. Pre-purchase, seller, warranty, and essential systems inspections to help you buy, sell, or maintain with confidence."
+permalink: "services/"
+page:
+    title: Services
+eleventyNavigation:
+    key: Services/
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/content.css" />
+    <link
+        rel="preloadImg"
+        href="{% getUrl '/assets/images/services.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+        as="image"
+    />
+    <link
+        rel="preloadImg"
+        href="{% getUrl '/assets/images/services.jpg' | resize({ width: 712, height: 898 }) | jpeg %}"
+        as="image"
+    />
+{% endblock %}
+{% block body %}
+    {% include 'components/banner.html' %}
+
+    <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+    <section id="content-page-1532">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-background">
+                    <!--Tablet Image-->
+                    <source
+                        media="(max-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/services.jpg' | resize({ width: 712, height: 898 }) | avif %}
+                        "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/services.jpg' | resize({ width: 712, height: 898 }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/services.jpg' | resize({ width: 712, height: 898 }) | jpeg %}
+                        "
+                        type="image/jpeg"
+                    />
+                    <!--Desktop Image-->
+                    <source
+                        media="(min-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/services.jpg' | resize({ width: 1024, height: 1080 }) | avif %}
+                        "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/services.jpg' | resize({ width: 1024, height: 1080 }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/services.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}
+                        "
+                        type="image/jpeg"
+                    />
+                    <img
+                        src="{% getUrl '/assets/images/services.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+                        alt="tools"
+                        width="522"
+                        height="540"
+                        loading="lazy"
+                        decoding="async"
+                        aria-hidden="true"
+                    />
+                </picture>
+            </div>
+            <div class="cs-content">
+                <h1 class="cs-title">RV Repair Services</h1>
+                <p class="cs-text">
+                    At AAA RV Tech, I bring fast, reliable RV repair and
+                    maintenance right to your location—whether you're in
+                    Portland, Oregon, or camping nearby. No waiting rooms, no
+                    towing—just expert service where and when you need it.
+                    Here’s what I can help with:
+                </p>
+
+                <h3>🔧 Appliance Repairs</h3>
+                <p class="cs-text">
+                    From fridges and furnaces to water heaters and A/Cs—if it’s
+                    in your RV and it’s not working, I can fix it. I service all
+                    major appliances, getting them back up and running fast.
+                </p>
+
+                <h3>🧼 Tank Services</h3>
+                <p class="cs-text">
+                    Black tank stinking? Grey tank clogged? I provide
+                    professional tank maintenance and cleaning to keep your
+                    system flowing smoothly (and smelling better).
+                </p>
+
+                <h3>🚿 Plumbing Repairs</h3>
+                <p class="cs-text">
+                    Leaks, water pressure issues, hot water problems—I handle
+                    all your RV plumbing needs so you don’t have to worry about
+                    puddles under the sink.
+                </p>
+                <h3>☀️ Solar Installation</h3>
+                <p class="cs-text">
+                    Want to go off-grid or add a little more power to your
+                    setup? I offer custom RV solar installs to help you travel
+                    farther with less hassle.
+                </p>
+                <h3>🏕️ Roof Repair & Replacement</h3>
+                <p class="cs-text">
+                    Leaky roof or soft spots? I provide roof inspections,
+                    patching, sealing, and full replacements to keep the
+                    elements out and your rig protected.
+                </p>
+                <h3>🧰 General Maintenance</h3>
+                <p class="cs-text">
+                    Keep your RV road-ready with regular checkups and
+                    maintenance. I handle everything from seasonal prep to
+                    safety checks and minor repairs.
+                </p>
+
+                <h3>Not Sure What You Need?</h3>
+                <p class="cs-text">
+                    No problem—just reach out. I’ll help diagnose the issue and
+                    get you on the right track.
+                </p>
+                <div class="cs-divider"></div>
+                <h2>📍 Service Area</h2>
+                <p class="cs-text">
+                    I’m based in <b>Portland, Oregon</b>, and serve RVers
+                    throughout the surrounding areas. Whether you're in the
+                    city, at a campground nearby, or boondocking a little
+                    farther out—I’ll do my best to come to you.
+                </p>
+                <p class="cs-text">
+                    Not sure if you’re within range? Just reach out and ask—I’m
+                    always happy to help if I can.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}
