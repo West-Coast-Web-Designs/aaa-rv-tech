@@ -116,19 +116,53 @@ eleventyNavigation:
                 <picture class="cs-picture">
                     <source
                         media="(max-width: 600px)"
-                        srcset="/assets/images/profile.jpg"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1136, height: 1062, position: 'attention' }) | avif %}
+                        "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1136, height: 1062, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1136, height: 1062, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
+                    />
+                    <!--Tablet Image-->
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1260, height: 1260, position: 'attention' }) | avif %}
+                        "
+                        type="image/avif"
                     />
                     <source
                         media="(min-width: 601px)"
-                        srcset="/assets/images/profile.jpg"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1260, height: 1260, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/profile.jpg' | resize({ width: 1260, height: 1260, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
-                        loading="lazy"
-                        decoding="async"
-                        src="/assets/images/profile.jpg"
-                        alt="meeting"
+                        src="{% getUrl '/assets/images/profile.jpg' | resize({ width: 630, height: 630, position: 'attention' }) | jpeg %}"
+                        alt="AAA RV Tech Owner"
                         width="630"
                         height="630"
+                        decoding="async"
                         aria-hidden="true"
                     />
                 </picture>
