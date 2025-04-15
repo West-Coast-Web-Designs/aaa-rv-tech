@@ -495,7 +495,7 @@
     line-height: 1.5em;
     text-align: center;
     margin: 0 0 1rem;
-    color: #7d799c;
+    color: var(--grayDark);
     display: block;
   }
   #reviews-62 .cs-item-text {

@@ -204,8 +204,8 @@
     line-height: 2.25rem;
     padding: 0 3rem;
     display: inline-block;
-    color: var(--primary);
-    border: 1px solid var(--primary);
+    color: var(--primaryDark);
+    border: 1px solid var(--primaryDark);
     border-radius: var(--borderRoundedSm);
     background-color: #fff;
     text-align: center;
@@ -213,7 +213,7 @@
     cursor: pointer;
   }
   #contact-1441 .cs-file-upload:hover {
-    background-color: var(--primary);
+    background-color: var(--primaryDark);
     color: #fff;
   }
   #contact-1441 .cs-file-upload-help-text {
