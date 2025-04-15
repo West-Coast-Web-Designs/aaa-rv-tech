@@ -280,13 +280,6 @@
   body.dark-mode #contact-1441 .cs-link {
     opacity: 0.8;
   }
-  body.dark-mode #contact-1441 .cs-icon-wrapper {
-    border-color: #fff;
-  }
-  body.dark-mode #contact-1441 .cs-icon {
-    /* makes it white */
-    filter: grayscale(1) brightness(1000%);
-  }
   body.dark-mode #contact-1441 .cs-form {
     background-color: var(--medium);
   }
