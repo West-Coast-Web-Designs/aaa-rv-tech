@@ -49,7 +49,7 @@
     padding-top: 9.375rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    border-radius: 1.5rem;
+    border-radius: var(--borderRounded);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -159,7 +159,7 @@
     /* prevents flexbox from affecting height and width */
     box-sizing: border-box;
     background-color: #fff;
-    border-radius: 1.5rem;
+    border-radius: var(--borderRounded);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -186,7 +186,7 @@
     padding-left: 1.5rem;
     color: var(--headerColor);
     background-color: #f7f7f7;
-    border-radius: 0.5rem;
+    border-radius: var(--borderRoundedSm);
     border: none;
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
