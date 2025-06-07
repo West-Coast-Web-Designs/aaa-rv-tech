@@ -447,7 +447,7 @@
             margin: 0;
             display: block;
             object-fit: contain;
-            filter: invert(1) brightness(10000%);
+            filter: invert(1) brightness(10000%) grayscale(1) contrast(100);
         }
 
         .cs-background {
