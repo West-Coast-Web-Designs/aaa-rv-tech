@@ -366,7 +366,7 @@ eleventyNavigation:
                     class="cs-seal"
                     loading="lazy"
                     decoding="async"
-                    src="/assets/images/logo.jpg"
+                    src="/assets/images/logo.png"
                     alt="seal"
                     width="190"
                     height="182"
@@ -412,21 +412,21 @@ eleventyNavigation:
                 <source
                     media="(max-width: 600px)"
                     srcset="
-                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1100, height: 1200, position: 'attention' }) | avif %}
+                        {% getUrl '/assets/images/why-choose-us.jpg' | resize({ width: 1100, height: 1200, position: 'attention' }) | avif %}
                     "
                     type="image/avif"
                 />
                 <source
                     media="(max-width: 600px)"
                     srcset="
-                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1100, height: 1200, position: 'attention' }) | webp %}
+                        {% getUrl '/assets/images/why-choose-us.jpg' | resize({ width: 1100, height: 1200, position: 'attention' }) | webp %}
                     "
                     type="image/webp"
                 />
                 <source
                     media="(max-width: 600px)"
                     srcset="
-                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1100, height: 1200, position: 'attention' }) | jpeg %}
+                        {% getUrl '/assets/images/why-choose-us.jpg' | resize({ width: 1100, height: 1200, position: 'attention' }) | jpeg %}
                     "
                     type="image/jpeg"
                 />
@@ -434,26 +434,26 @@ eleventyNavigation:
                 <source
                     media="(min-width: 601px)"
                     srcset="
-                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1172, height: 1500, position: 'attention' }) | avif %}
+                        {% getUrl '/assets/images/why-choose-us.jpg' | resize({ width: 1172, height: 1500, position: 'attention' }) | avif %}
                     "
                     type="image/avif"
                 />
                 <source
                     media="(min-width: 601px)"
                     srcset="
-                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1172, height: 1500, position: 'attention' }) | webp %}
+                        {% getUrl '/assets/images/why-choose-us.jpg' | resize({ width: 1172, height: 1500, position: 'attention' }) | webp %}
                     "
                     type="image/webp"
                 />
                 <source
                     media="(min-width: 601px)"
                     srcset="
-                        {% getUrl '/assets/images/why-choose-us.png' | resize({ width: 1172, height: 1500, position: 'attention' }) | jpeg %}
+                        {% getUrl '/assets/images/why-choose-us.jpg' | resize({ width: 1172, height: 1500, position: 'attention' }) | jpeg %}
                     "
                     type="image/jpeg"
                 />
                 <img
-                    src="{% getUrl '/assets/images/why-choose-us.png' | resize({ width: 586, height: 752, position: 'attention' }) | jpeg %}"
+                    src="{% getUrl '/assets/images/why-choose-us.jpg' | resize({ width: 586, height: 752, position: 'attention' }) | jpeg %}"
                     alt="Beaver repairing rv"
                     width="586"
                     height="752"
