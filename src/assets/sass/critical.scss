@@ -39,6 +39,21 @@
             align-items: flex-start;
         }
 
+        .cs-logo {
+            width: 100%;
+            height: auto;
+            align-self: center;
+
+            justify-content: center;
+            margin-bottom: calc(20 / 16 * 1rem);
+        }
+
+        .cs-content-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
         .cs-title {
             /* 39px - 61px */
             font-size: clamp(2.4375rem, 5vw, 3.8125rem);
@@ -106,12 +121,12 @@
             text-align: left;
             flex-direction: row;
             justify-content: space-evenly;
-            align-items: flex-start;
+            align-items: flex-end;
             gap: calc(32 / 16 * 1rem);
         }
 
         .cs-title {
-            width: 55%;
+            // width: 55%;
             max-width: calc(630 / 16 * 1rem);
             margin-bottom: 0;
             /* prevents flexbox from squishing it */
